@@ -1,0 +1,557 @@
+/* Importing fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #e8631c;
+  --secondary-color: #303030;
+  --text-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  min-height: 100vh;
+  color: white;
+}
+
+body::before {
+  content: "";
+  display: block;
+  padding-top: 100px;
+}
+
+/* Website Reusable Codes/Settings */
+h1 {
+  font-size: 65px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 54px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 300;
+}
+/* 
+i {
+  color: var(--secondary-color);
+} */
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 100px 20px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.col {
+  width: 100%;
+}
+
+/* Header */
+#header {
+  padding: 0px 20px;
+  background: #303030;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+#header .container {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .container .logo a img {
+  width: 134px;
+}
+
+#header .container nav .navlinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#header .container nav .navlinks li {
+  list-style: none;
+}
+
+#header .container nav .navlinks li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+#header .container nav .navlinks li a:hover {
+  color: var(--primary-color);
+}
+
+.search-btn {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#header .search .search-form {
+  position: fixed;
+  background: rgba(53, 53, 53, 0.548);
+  z-index: 9999;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: -999%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#header .search .search-form.search-open {
+  top: 0px;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.search-form .search-input {
+  width: 40%;
+}
+
+.search-form .search-input input {
+  padding: 10px 20px 10px 20px;
+  border: none;
+  color: var(--secondary-color);
+  border-radius: 5px;
+  font-size: 19px;
+  width: 100%;
+}
+
+.search-form .search-input input:focus {
+  outline: none;
+}
+
+.close-btn {
+  position: absolute;
+  font-size: 35px;
+  right: 23px;
+  top: 17px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-close-btn {
+  display: none;
+}
+
+.fa-bars-staggered {
+  display: none;
+}
+
+/* Banner/Hero Section */
+#hero {
+  padding: 50px 20px 100px;
+  background: url(../images/hero-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+#hero .container {
+  text-align: left;
+}
+
+#hero .container .col {
+  width: 50%;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 6px 60px 10px;
+  background-color: var(--primary-color);
+  color: white;
+  margin-top: 25px;
+  font-size: 21px;
+}
+
+.cta-btn:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* Promo Section */
+#promo {
+  background: url(../images/design-bg-1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#promo .container .grid {
+  margin-top: 50px;
+}
+
+.promo-card {
+  width: 100%;
+  background: var(--secondary-color);
+}
+
+.promo-card .card-content {
+  background: var(--secondary-color);
+  padding: 10px 20px 20px;
+}
+
+.promo-card .card-content h3 {
+  font-size: 25px;
+}
+
+.promo-card .card-content p {
+  font-size: 16px;
+}
+
+/* Pricing Section */
+#price {
+  background: url(../images/design-bg-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#price .container .grid {
+  margin-top: 50px;
+}
+
+.price-card {
+  border-radius: 6px;
+  background: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px 20px;
+  gap: 15px;
+}
+
+.price-card i {
+  font-size: 70px;
+  margin-bottom: 25px;
+}
+
+.price-card h3 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.price-card p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.price-card .price-tag {
+  background: var(--secondary-color);
+  display: block;
+  padding: 8px 2px;
+  width: 100%;
+  border-radius: 3px;
+  color: white;
+  transition: all 0.3s;
+}
+
+.price-tag:hover {
+  background: white;
+  color: var(--primary-color);
+}
+
+/* Showcase Section */
+.showcase {
+  padding: 0px;
+}
+
+.showcase .grid .col .content {
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.read-btn {
+  background: var(--secondary-color);
+  transition: all 0.3s;
+}
+
+.read-btn:hover {
+  background: white;
+}
+
+#showcase-1 .grid .col:nth-child(1) {
+  background: url(../images/dancer-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  max-height: 100%;
+}
+
+#showcase-1 .grid .col:nth-child(2) {
+  background: url(../images/design-bg-3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#showcase-2 .grid .col:nth-child(2) {
+  background: url(../images/design-bg-3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#showcase-2 .grid .col:nth-child(3) {
+  display: block;
+  background: url(../images/dancer-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  max-height: 100%;
+}
+
+.col-s2-img {
+  display: none;
+}
+
+/* Statistics Section */
+.statistics {
+  background: var(--secondary-color);
+}
+
+.statistics h2 {
+  margin-bottom: 20px;
+}
+
+.statistics .container .grid {
+  margin-top: 120px;
+}
+
+.statistics .container .grid h3 {
+  font-size: 53px;
+  font-weight: 500;
+}
+
+/* Quote Section */
+#quote {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(232, 99, 28, 0.9), rgba(232, 99, 28, 0.9)),
+    url(../images/dancer-3.jpg);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#quote .container p {
+  font-size: 38px;
+  font-weight: 400;
+}
+
+#quote .container h3 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+/* Newsletter  */
+#newsletter {
+  background: url(../images/design-bg-4.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#newsletter .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#newsletter .container h2 {
+  font-weight: 900;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.subscribe-form input {
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  color: var(--secondary-color);
+  font-size: 21px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  width: 60%;
+}
+
+.subscribe-form input:focus {
+  outline: none;
+}
+
+.subscribe-form button {
+  background: var(--secondary-color);
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  padding: 8px 50px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Footer */
+#footer {
+  background: var(--secondary-color);
+  padding: 50px;
+}
+
+#footer .container {
+  text-align: left;
+}
+
+#footer .container .grid {
+  gap: 20px;
+}
+
+.footer-grid {
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+
+.col-padding-right {
+  padding-right: 100px;
+}
+
+#footer p {
+  font-size: 22px;
+  margin: 20px 0px 30px;
+}
+
+#footer li {
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  margin: 15px 0px;
+  font-size: 20px;
+}
+
+#footer li a {
+  color: var(--text-color);
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  color: var(--secondary-color);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  background: var(--primary-color);
+  color: white;
+}

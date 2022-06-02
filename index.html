@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dance Website - SHAH SAMIN YASAR</title>
+    <!-- Link Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/ac80174efa.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link CSS Files -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="images/logo.png" alt="Logo" /></a>
+        </div>
+        <nav id="header-nav">
+          <ul class="navlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#promo">Product</a></li>
+            <li><a href="#price">Promo</a></li>
+            <li><a href="#showcase-1">About</a></li>
+            <li><a href="#newsletter">Contact</a></li>
+          </ul>
+          <button class="nav-close-btn">
+            <i class="fa-solid fa-xmark close-btn" onclick="closeNav()"></i>
+          </button>
+        </nav>
+        <div class="search">
+          <i
+            class="fa-solid fa-magnifying-glass search-btn"
+            onclick="openSearch()"
+          ></i>
+          <i class="fa-solid fa-bars-staggered" onclick="openNav()"></i>
+          <div class="search-form">
+            <div class="search-input">
+              <input type="text" placeholder="Type & press 'Enter' to search" />
+              <i
+                class="fa-solid fa-xmark close-btn"
+                onclick="closeSearch()"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner/Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="col">
+          <h1>Title Here</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            lacinia odio vitae vestibulum vestibulum.
+          </p>
+          <a href="#" class="cta-btn">Register Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="promo">
+      <div class="container">
+        <h2>Dance Tour</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum vestibulum.
+        </p>
+        <div class="grid grid-3">
+          <div class="promo-card">
+            <img src="images/card-1.jpg" alt="" />
+            <div class="card-content">
+              <h3>AMERICA</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="promo-card">
+            <img src="images/card-2.jpg" alt="" />
+            <div class="card-content">
+              <h3>ASIA</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="promo-card">
+            <img src="images/card-3.jpg" alt="" />
+            <div class="card-content">
+              <h3>AUSTRALIA</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Price Section -->
+    <section id="price">
+      <div class="container">
+        <h2>PRICING</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum vestibulum.
+        </p>
+        <div class="grid grid-3">
+          <div class="price-card">
+            <i class="fa-solid fa-award"></i>
+            <h3>BASIC</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="price-tag">$150.00</a>
+          </div>
+          <div class="price-card">
+            <i class="fa-solid fa-award"></i>
+            <h3>BASIC</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="price-tag">$150.00</a>
+          </div>
+          <div class="price-card">
+            <i class="fa-solid fa-award"></i>
+            <h3>BASIC</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="price-tag">$150.00</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase Section-1 -->
+    <section id="showcase-1" class="showcase">
+      <div class="grid grid-2">
+        <div class="col"></div>
+        <div class="col">
+          <div class="content">
+            <h2>AMAZING DANCE</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              lacinia odio vitae vestibulum vestibulum.
+            </p>
+            <a href="#" class="cta-btn read-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase Section-2 -->
+    <section id="showcase-2" class="showcase">
+      <div class="grid grid-2">
+        <div class="col col-s2-img"></div>
+        <div class="col">
+          <div class="content">
+            <h2>BEST DANCE</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              lacinia odio vitae vestibulum vestibulum.
+            </p>
+            <a href="#" class="cta-btn read-btn">Read More</a>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="statistics">
+      <div class="container">
+        <h2>OUR STATISTICS</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum vestibulum.
+        </p>
+        <div class="grid grid-3">
+          <div class="col">
+            <h3>1240+</h3>
+            <p>Club</p>
+          </div>
+          <div class="col">
+            <h3>2000+</h3>
+            <p>Active Member</p>
+          </div>
+          <div class="col">
+            <h3>1000+</h3>
+            <p>Community</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section id="quote" class="quote">
+      <div class="container">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum vestibulum.
+        </p>
+        <h3 class="bold">Herbert Simon</h3>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter">
+      <div class="container">
+        <h2>SUBSCRIBE</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum vestibulum.
+        </p>
+        <div class="subscribe-form">
+          <input type="email" placeholder="Your Email" />
+          <button type="submit">SUBSCRIBE</button>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="grid grid-4 footer-grid">
+        <div class="col col-padding-right">
+          <h3>Musicology</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
+            dignissim nunc, id maximus ex. Etiam nec dignissim elit, at
+            dignissim enim.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Brand Guidelines</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>SERVICES</h3>
+          <ul>
+            <li><a href="#">How to Order</a></li>
+            <li><a href="#">Our Product</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Promo</a></li>
+            <li><a href="#">Payment Method</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Other</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Link Bootstrap JS -->
+    <script src="css/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+    <!-- Link JS File -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
